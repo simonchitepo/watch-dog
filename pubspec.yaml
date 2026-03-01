@@ -1,0 +1,92 @@
+name: watchdog
+description: A lightweight file integrity & risk analyzer for Android (Flutter).
+publish_to: "none"
+
+version: 2.0.0+2
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  provider: ^6.1.2
+  file_picker: ^10.3.10
+  shared_preferences: ^2.3.2
+  crypto: ^3.0.6
+  google_fonts: ^6.2.1
+  share_plus: ^12.0.1
+  path: ^1.9.0
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+  # App icon generator (Android/iOS/Web/Windows)
+  flutter_launcher_icons: ^0.14.4
+
+  # MSIX packaging for Windows / Microsoft Store
+  msix: ^3.16.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon/app_icon.png
+
+# -----------------------------
+# Launcher icons (Windows + Android)
+# -----------------------------
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon/app_icon.png"
+
+  # Generate Windows runner icon
+  windows:
+    generate: true
+    image_path: "assets/icon/app_icon.png"
+    icon_size: 256
+
+  # Optional: web icon generation (safe to keep even if you don't ship web)
+  web:
+    generate: true
+    image_path: "assets/icon/app_icon.png"
+    background_color: "#121212"
+    theme_color: "#121212"
+
+# --------------------------------------------
+# Microsoft Store / MSIX packaging configuration
+# (Values from your "View product identity" screenshot)
+# --------------------------------------------
+msix_config:
+  # What users see (must match the name you reserved in Partner Center)
+  display_name: "Ai Watchdog"
+  publisher_display_name: "cyph3r"
+
+  # MUST match Partner Center "Package/Identity"
+  identity_name: "cyph3r.AiWatchdog"
+  publisher: "CN=7456A62D-B4E5-49F3-9485-ADF80146DE6A"
+
+  # Store requires Revision (4th) = 0
+  # Map Dart build +2 into the 3rd field:
+  msix_version: "2.0.2.0"
+
+  # App branding
+  logo_path: "assets/icon/app_icon.png"
+
+  # Target arch
+  architecture: "x64"
+
+  # Capabilities (safe default)
+  capabilities: "internetClient"
+
+  # Store signs the package
+  sign_msix: false
+
+  # References (not required by msix tool; for your records)
+  # package_family_name: "cyph3r.AiWatchdog_fb6bh328pz6dt"
+  # store_id: "9P1V4XTJG6HW"
