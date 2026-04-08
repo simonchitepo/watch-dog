@@ -1,6 +1,5 @@
 # 🛡️ Watchdog – System Monitoring & File Protection
 
-![Banner](https://via.placeholder.com/1200x300?text=Watchdog+Monitoring+System)
 
 ![Flutter](https://img.shields.io/badge/Flutter-3.x-blue)
 ![Platform](https://img.shields.io/badge/Platform-Cross--Platform-green)
@@ -120,7 +119,22 @@ Watchdog addresses these issues by:
 ---
 
 ## 📊 Impact
+## 📈 Beta Testing Statistics
 
+During the initial beta phase, we tracked the application's performance and acquisition funnel to ensure stability and user interest.
+
+| Metric | Value | Description |
+| :--- | :--- | :--- |
+| **Total Page Views** | **460** | Unique views of the application/store page. |
+| **Total Installs** | **28** | Successful application downloads and setups. |
+| **Conversion Rate** | **6.09%** | Percentage of viewers who became active users. |
+| **Install Success Rate** | **100%** | Reliability of the installation package across devices. |
+
+### 🔍 Analysis of Results
+* **Rock-Solid Stability:** A **100% Install Success Rate** confirms that the Flutter build is highly compatible across target environments.
+* **External Factors:** We observed a slight deviation in install rates on February 7th due to a documented Azure service outage, which was quickly mitigated.
+* **Engagement:** A conversion rate of **~6%** is a strong baseline for a specialized security tool, showing high intent from users visiting the page.
+![impact](image-4.png)
 ### Before Watchdog
 - Limited visibility  
 - Manual monitoring required  
