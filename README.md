@@ -160,7 +160,7 @@ During the initial beta phase, we tracked the application's performance and acqu
 
 ```bash
 # Clone repo
-git clone <your-repo-url>
+git clone https://github.com/simonchitepo/watch-dog
 
 cd watchdog
 
